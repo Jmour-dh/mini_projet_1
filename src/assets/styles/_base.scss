@@ -1,3 +1,28 @@
+body {
+  font-family: var(--font-family);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.column{
+  flex-direction: column;
+}
+.padding {
+  padding: 1rem;
+}
+
+.text-align {
+  text-align: center;
+}
 a {
   color: var(--text);
   text-decoration: none;

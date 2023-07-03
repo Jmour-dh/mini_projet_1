@@ -7,15 +7,23 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/97bb762bba.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <title>Dice Game</title>
   </head>
   <body>
+    <!-- header -->
     <header>
       <nav>
         <div>
           <a class="header-brand" href="./index.html">
             <i class="fa-solid fa-dice"></i>
-            Dice game</a>
+            Dice game</a
+          >
         </div>
         <div class="header-menu">
           <ul>
@@ -32,10 +40,251 @@
         </div>
       </nav>
     </header>
+    <!-- Carrousel -->
+    <div class="carousel">
+      <div id="slider">
+        <div class="slide">
+          <img
+            src="./assets/images/image_dice_1.jpg"
+            alt="slide-1"
+            style="object-position: center"
+          />
+          <div class="carousel-caption">
+            <h2>Amusez vous bien</h2>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="./assets/images/image_dice_2.jpg" alt="slide-2" />
+          <div class="carousel-caption">
+            <h2>Bienvenus dans notre club</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="d-flex column align-center justify-center">
+      <h2>Nos types de dés</h2>
+       <!-- dices-->
+      <!-- dice 1 -->
+      <div class="dice_description d-flex align-center padding">
+        <!-- LEFT PART -->
+        <div class="d-flex align-center">
+          <!-- LEFT ARROW -->
+          <div class="arrow_left"></div>
+          <div class="img_outer">
+            <div class="img_container d-flex">
+              <img src="./assets/images/dice_type_4_1.jpg" alt="First dice" />
+              <img src="./assets/images/dice_type_4_2.jpg" alt="Second dice" />
+            </div>
+          </div>
+          <!-- RIGHT ARROW -->
+          <div class="arrow_rigth"></div>
+        </div>
+        <!-- RIGHT PART -->
+        <div class="dice_details">
+          <h3>Dé à 4 faces</h3>
+          <p>
+            Le dé à 4 faces est souvent utilisé lors des petites attaques en
+            combat dans donjon et dragon. Par exemple, un moine, utilisant son
+            ki pour donner des coups de poings utilisera un dé à faces pour voir
+            les dégâts qu’il inflige. C’est le chiffre qui apparaît en haut qui
+            détermine le résultat du dé. Sur la photo par exemple, le résultat
+            est de 4.
+          </p>
+        </div>
+      </div>
+      <!-- dice 2 -->
+      <div class="dice_description d-flex align-center padding">
+        <!-- LEFT PART -->
+        <div class="d-flex align-center">
+          <!-- LEFT ARROW -->
+          <div class="arrow_left"></div>
+          <div class="img_outer">
+            <div class="img_container d-flex">
+              <img src="./assets/images/dice_type_6_1.jpg" alt="First dice" />
+              <img src="./assets/images/dice_type_6_2.jpg" alt="Second dice" />
+            </div>
+          </div>
+          <!-- RIGHT ARROW -->
+          <div class="arrow_rigth"></div>
+        </div>
+        <!-- RIGHT PART -->
+        <div class="dice_details">
+          <h3>Dé à 6 faces</h3>
+          <p>
+            Le dé le plus courant. C’est celui qu’on utilise également dans les
+            autres jeux. Il est généralement utilisé pour les dégâts des armes
+            moyennement efficace en jeu de rôle, comme des arcs ou bien des
+            bâtons. C’est bien évidemment le chiffre du haut qui est pris en
+            compte lors d’un lancement de dé.
+          </p>
+        </div>
+      </div>
+      <!-- dice 3 -->
+      <div class="dice_description d-flex align-center padding">
+        <!-- LEFT PART -->
+        <div class="d-flex align-center">
+          <!-- LEFT ARROW -->
+          <div class="arrow_left"></div>
+          <div class="img_outer">
+            <div class="img_container d-flex">
+              <img src="./assets/images/dice_type_8_1.jpg" alt="First dice" />
+              <img src="./assets/images/dice_type_8_2.jpg" alt="Second dice" />
+            </div>
+          </div>
+          <!-- RIGHT ARROW -->
+          <div class="arrow_rigth"></div>
+        </div>
+        <!-- RIGHT PART -->
+        <div class="dice_details">
+          <h3>Dé à 8 faces</h3>
+          <p>
+            Le dé à 8 faces, ou d8, est un dé assez courant dans les jeux de
+            rôle. Il offre deux possibilité de plus que le dé à 6 faces. C’est
+            plutôt utile pour les armes un peu plus forte, comme les arcs long
+            et les massues. Le résultat est le chiffre le plus haut lors. du
+            lancer, dans cet exemple, c’est le 2.
+          </p>
+        </div>
+      </div>
+       <!-- dice 4 -->
+       <div class="dice_description d-flex align-center padding">
+        <!-- LEFT PART -->
+        <div class="d-flex align-center">
+          <!-- LEFT ARROW -->
+          <div class="arrow_left"></div>
+          <div class="img_outer">
+            <div class="img_container d-flex">
+              <img
+                src="./assets/images/dice_type_10_1.jpg"
+                alt="First dice"
+              />
+              <img
+                src="./assets/images/dice_type_10_2.jpg"
+                alt="Second dice"
+              />
+            </div>
+          </div>
+          <!-- RIGHT ARROW -->
+          <div class="arrow_rigth"></div>
+        </div>
+        <!-- RIGHT PART -->
+        <div class="dice_details">
+          <h3>Dé à 10 faces</h3>
+          <p>
+            Le dé à 10 faces est un peu plus rarement utilisé dans les jeux de
+            rôles. Il est utile pour les très grosses armes, bien plus rare,
+            comme des piques ou des hallebardes. Le 0 correspond au chiffre
+            10, et le résultat est le nombre apparaissant en haut, dans cet
+            exemple, le 6.
+          </p>
+        </div>
+      </div>
+      <div class="toBeFaded">
+        <!-- dice 5 -->
+        <div class="dice_description d-flex align-center padding">
+          <!-- LEFT PART -->
+          <div class="d-flex align-center">
+            <!-- LEFT ARROW -->
+            <div class="arrow_left"></div>
+            <div class="img_outer">
+              <div class="img_container d-flex">
+                <img
+                  src="./assets/images/dice_type_12_1.jpg"
+                  alt="First dice"
+                />
+                <img
+                  src="./assets/images/dice_type_12_2.jpg"
+                  alt="Second dice"
+                />
+              </div>
+            </div>
+            <!-- RIGHT ARROW -->
+            <div class="arrow_rigth"></div>
+          </div>
+          <!-- RIGHT PART -->
+          <div class="dice_details">
+            <h3>Dé à 12 faces</h3>
+            <p>
+              Le dé à 12 faces est le dé le plus puissant pour les combats. Si
+              votre MJ sort un dé 12 pour les dégâts d’un adversaire, vous
+              pouvez faire vos prières ! Il peut être utilisé pour les sorts de
+              mages les plus puissants notamment, ou les attaques de créatures
+              mythiques.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="toBeFaded">
+        <!-- dice 6 -->
+        <div class="dice_description d-flex align-center padding">
+          <!-- LEFT PART -->
+          <div class="d-flex align-center">
+            <!-- LEFT ARROW -->
+            <div class="arrow_left"></div>
+            <div class="img_outer">
+              <div class="img_container d-flex">
+                <img
+                  src="./assets/images/dice_type_20_1.jpg"
+                  alt="First dice"
+                />
+                <img
+                  src="./assets/images/dice_type_20_2.jpg"
+                  alt="Second dice"
+                />
+              </div>
+            </div>
+            <!-- RIGHT ARROW -->
+            <div class="arrow_rigth"></div>
+          </div>
+          <!-- RIGHT PART -->
+          <div class="dice_details">
+            <h3>Dé à 20 faces</h3>
+            <p>
+              Le dé à 20 faces est le plus courant dans les jeux de rôle, et
+              particulièrement dans donjon et dragon. C’est celui là qui
+              déterminera la réussite ou l’échec de la majorité de vos actions.
+              Vous voulez enfoncer une porte ? Lancer un dé 20. Convaincre
+              quelqu’un ? Un dé 20. C’est le dé de base de donjon et dragon.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="toBeFaded">
+        <!-- dice 7 -->
+        <div class="dice_description d-flex align-center padding">
+          <!-- LEFT PART -->
+          <div class="d-flex align-center">
+            <!-- LEFT ARROW -->
+            <div class="arrow_left"></div>
+            <div class="img_outer">
+              <div class="img_container d-flex">
+                <img
+                  src="./assets/images/dice_type_100_1.jpg"
+                  alt="First dice"
+                />
+                <img
+                  src="./assets/images/dice_type_100_2.jpg"
+                  alt="Second dice"
+                />
+              </div>
+            </div>
+            <!-- RIGHT ARROW -->
+            <div class="arrow_rigth"></div>
+          </div>
+          <!-- RIGHT PART -->
+          <div class="dice_details">
+            <h3>Dé à 100 faces</h3>
+            <p>
+              Le dernier dé qu’on peut utiliser en jeu de rôle. Le dé 100 n’est
+              pas toujours utilisé par les MJ, cela va dépendre de leur manière
+              de gérer le jeu. Il comporte en réalité 10 faces, numérotées de 10
+              à 100 (00). Le résultat du dé est le nombre le plus haut, ici ce
+              serait le 20 par exemple.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>© Dice game</footer>
-    <script
-      src="https://kit.fontawesome.com/97bb762bba.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
