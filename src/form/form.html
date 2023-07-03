@@ -15,7 +15,8 @@
         <div>
           <a class="header-brand" href="./index.html">
             <i class="fa-solid fa-dice"></i>
-            Dice game</a>
+            Dice game</a
+          >
         </div>
         <div class="header-menu">
           <ul>
@@ -29,9 +30,42 @@
               <a href="./form.html" class="header-nav active">Contact</a>
             </li>
           </ul>
+          <div class="header-menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
       </nav>
     </header>
+    <div class="content">
+      <form>
+        <h2 class="title-underline text-align">Contacter Nous !</h2>
+        <div class="form-group">
+          <label>Nom</label>
+          <input type="text" name="nom" />
+        </div>
+        <div class="form-group">
+          <label>Prénom</label>
+          <input type="text" name="prenom" />
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" name="email" />
+        </div>
+        <div class="form-group">
+          <label>Objet</label>
+          <input type="text" name="objet" />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="content"></textarea>
+        </div>
+        <ul class="text-error" id="errors"></ul>
+        <div class="form-btn-container">
+          <button type="button" class="btn btn-secondary">Annuler</button>
+          <button type="submit" class="btn btn-primary">Sauvgarder</button>
+        </div>
+      </form>
+    </div>
     <footer>© Dice game</footer>
     <script
       src="https://kit.fontawesome.com/97bb762bba.js"

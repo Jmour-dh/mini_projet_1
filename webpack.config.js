@@ -6,8 +6,8 @@ module.exports = {
   entry: {
     main: path.join(__dirname, "src/index.js"),
     mainStyles: path.join(__dirname, "src/index.scss"),
-    jouer: path.join(__dirname, "./src/jouer/jouer.js"),
-    jouerStyles: path.join(__dirname, "./src/jouer/jouer.scss"),
+    jouer: path.join(__dirname, "src/jouer/jouer.js"),
+    jouerStyles: path.join(__dirname, "src/jouer/jouer.scss"),
     form: path.join(__dirname, "src/form/form.js"),
     formStyles: path.join(__dirname, "src/form/form.scss"),
     topbar: path.join(__dirname, "src/assets/javascripts/topbar.js"),

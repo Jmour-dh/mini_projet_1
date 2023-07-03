@@ -29,9 +29,84 @@
               <a href="./form.html" class="header-nav">Contact</a>
             </li>
           </ul>
+          <div class="header-menu-icon">
+            <i class="fas fa-bars"></i>
+          </div>
         </div>
       </nav>
     </header>
+    <main class="d-flex column align-center justify-center padding">
+      <!-- add new game -->
+      <div class="ngame d-flex justify-center align-center border-radius">
+        <p id="new-game" class="btn">
+          <span class="icon icon-add"></span>
+          New game
+        </p>
+      </div>
+      <!-- jouer -->
+      <div class="container">
+        <!-- Left -->
+        <div class="left d-flex column p-30 justify-content-space-between my-20">
+          <div class="text-align font-size">
+            <p class="player playerName-0">
+              Player 1<span class="player-0 active-player"></span>
+            </p>
+          </div>
+          <div class="text-align danger">
+            <p id="score-0" class="score">0</p>
+          </div>
+          <div>
+            <div class="current-score d-felx text-align border-radius">
+              <div>
+                <p class="current-text">current</p>
+              </div>
+              <div>
+                <p id="current-0" class="current-number">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- mid -->
+        <div
+          class="mid p-30 justify-content-space-between align-center my-20"
+        >
+          <div id="dice" class="d-flex justify-content-center">
+            <!------Render the image of the dice here -------->
+          </div>
+          <div class="action">
+            <div class="text-align font-size">
+              <p id="reload" class="btn1">
+                <span class="icon icon-reload"></span>roll dice
+              </p>
+            </div>
+            <div class="text-align font-size">
+              <p id="download" class="btn1">
+                <span class="icon icon-download"></span>hold
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- rigth -->
+        <div class="right d-flex column p-30 justify-content-space-between my-20">
+          <div class="text-align font-size">
+            <p class="player playerName-1">Player 2<span class="player-1"></span>                   </p>
+          </div>
+          <div class="text-align danger">
+            <p id="score-1" class="score">0</p>
+          </div>
+          <div>
+            <div class="current-score d-felx text-align border-radius">
+              <div>
+                <p class="current-text">current</p>
+              </div>
+              <div>
+                <p id="current-1" class="current-number">0</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <footer>© Dice game</footer>
     <script
       src="https://kit.fontawesome.com/97bb762bba.js"
