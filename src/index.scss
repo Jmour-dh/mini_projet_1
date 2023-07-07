@@ -7,11 +7,11 @@
   justify-content: center;
   height: 400px;
   width: 100%;
-  
+
   @include xs {
     height: 400px;
     width: 100%;
-    z-index:0;
+    z-index: 0;
   }
   #slider {
     position: absolute;
@@ -20,7 +20,7 @@
     overflow: hidden;
     @include xs {
       height: 350px;
-      
+
       h2 {
         font-size: 50px;
       }
@@ -46,6 +46,10 @@
     height: 501px;
     object-fit: cover;
   }
+}
+
+main {
+  margin-top: 10px;
 }
 
 /* dice description */
@@ -90,6 +94,17 @@
   overflow: hidden;
   width: 50%;
 }
+.img_outer1 {
+  overflow: hidden;
+  width: 50%;
+}
+
+.img_outer1 img {
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
 .img_outer img {
   min-width: 100%;
   max-width: 100%;
@@ -108,4 +123,15 @@
   border-bottom: 8px solid transparent;
   border-left: 8px solid black;
   cursor: pointer;
+}
+
+.nos_jeux {
+  margin-top: 5%;
+}
+
+.jeu {
+  display: flex;
+  @include xs {
+    flex-direction: column;
+  }
 }

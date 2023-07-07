@@ -53,7 +53,7 @@ header {
       color: white;
       @include xs {
         display: block;
-        z-index:1000;
+        z-index: 1000;
       }
     }
     .mobile-menu {

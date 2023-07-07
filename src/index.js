@@ -1,5 +1,7 @@
 import "./assets/styles/styles.scss";
 
+
+
 //_______________________CARROUSEL___________________________________
 //page accueil & service (carrousel)
 // obtiens  l'element de  slider
