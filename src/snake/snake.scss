@@ -1,1 +1,23 @@
 @import "../assets/styles/media-queries";
+
+
+main {
+  height: 86vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  @include xs {
+    height: 79.3vh;
+  }
+}
+
+
+
+canvas {
+  border: 1px solid black;
+  width: 50%;
+  height: 50%;
+}
