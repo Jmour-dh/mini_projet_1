@@ -8,6 +8,8 @@ module.exports = {
     mainStyles: path.join(__dirname, "src/index.scss"),
     jouer: path.join(__dirname, "src/jouer/jouer.js"),
     jouerStyles: path.join(__dirname, "src/jouer/jouer.scss"),
+    snake: path.join(__dirname, "src/snake/snake.js"),
+    snakeStyles: path.join(__dirname, "src/snake/snake.scss"),
     form: path.join(__dirname, "src/form/form.js"),
     formStyles: path.join(__dirname, "src/form/form.scss"),
     topbar: path.join(__dirname, "src/assets/javascripts/topbar.js"),
@@ -53,6 +55,11 @@ module.exports = {
       filename: "jouer.html",
       template: path.join(__dirname, "./src/jouer/jouer.html"),
       chunks: ["jouer", "topbar", "jouerStyles"],
+    }),
+    new HtmlWebpackPlugin({
+      filename: "snake.html",
+      template: path.join(__dirname, "./src/snake/snake.html"),
+      chunks: ["snake", "topbar", "snakeStyles"],
     }),
     new HtmlWebpackPlugin({
       filename: "form.html",
