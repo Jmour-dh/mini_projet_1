@@ -12,13 +12,13 @@ let score = 0;
 let running = false;
 
 const drawMap = () => {
-  // Dessiner le fond noir
+  // Draw the black background
   ctx.fillStyle = "black";
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 };
 
 const drawSnake = () => {
-  // Dessiner le serpent
+// Draw the snake
   ctx.fillStyle = "green";
   for (let body of snake) {
     ctx.fillRect(
@@ -31,7 +31,7 @@ const drawSnake = () => {
 };
 
 const drawApple = () => {
-  // Dessiner la pomme
+  // Draw the apple
   ctx.fillStyle = "red";
   ctx.fillRect(
     apple[0] * gridElem,
@@ -42,12 +42,12 @@ const drawApple = () => {
 };
 
 const handleResize = () => {
-  // Gérer le redimensionnement de la fenêtre
+  // Manage window resizing
   resizeGame();
 };
 
 const handleStartClick = () => {
-  // Gérer le clic pour démarrer le jeu
+  // Manage the click to start the game
   if (!running) {
     running = true;
     requestAnimationFrame(move);
@@ -55,7 +55,7 @@ const handleStartClick = () => {
 };
 
 const handleKeyDown = (event) => {
-  // Gérer l'appui sur les touches du clavier
+  // Manage pressing the keyboard keys
   switch (event.key) {
     case "ArrowRight": {
       if (direction !== "o") direction = "e";
@@ -79,7 +79,7 @@ const handleKeyDown = (event) => {
 };
 
 const gameover = () => {
-  // Vérifier si le jeu est terminé
+  // Check if the game is complete
   if (
     snake[0][0] > canvas.width / gridElem - 1 ||
     snake[0][0] < 0 ||
@@ -99,7 +99,7 @@ const gameover = () => {
 };
 
 const generateApple = () => {
-  // Générer une nouvelle pomme
+  // Generate a new apple
   const [x, y] = [
     Math.trunc(Math.random() * (canvas.width / gridElem)),
     Math.trunc(Math.random() * (canvas.height / gridElem)),
@@ -114,7 +114,7 @@ const generateApple = () => {
 };
 
 const generateSnake = () => {
-  // Générer un nouveau serpent
+  // Generate a new snake
   const maxX = canvas.width / gridElem - 5;
   const minX = 3;
   const maxY = canvas.height / gridElem - 5;
@@ -128,7 +128,7 @@ const generateSnake = () => {
 };
 
 const updateSnakePosition = () => {
-  // Mettre à jour la position du serpent
+  // Update snake position
   let head;
   switch (direction) {
     case "e": {
@@ -162,7 +162,7 @@ const updateSnakePosition = () => {
 };
 
 const drawScore = () => {
-  // Dessiner le score
+  // Draw the score
   ctx.fillStyle = "white";
   ctx.font = "40px sans-serif";
   ctx.textBaseline = "top";
@@ -170,7 +170,7 @@ const drawScore = () => {
 };
 
 const move = () => {
-  // Boucle principale du jeu
+  // Main loop of the game
   if (!updateSnakePosition()) {
     drawMap();
     drawSnake();
@@ -187,7 +187,7 @@ const move = () => {
 };
 
 const start = () => {
-  // Initialiser le jeu
+  // Initialize the game
   score = 0;
   speed = 800;
   snake = [];
@@ -206,7 +206,7 @@ const start = () => {
 };
 
 const resizeGame = () => {
-  // Redimensionner le jeu en fonction de la taille de la fenêtre
+  // Resize the game according to the size of the window
   if (window.innerWidth < 576) {
     gridElem = 20;
   } else if (window.innerWidth < 768) {
@@ -224,12 +224,12 @@ const resizeGame = () => {
 };
 
 
-// Écouter les événements
+// Listen to events
 window.addEventListener("resize", handleResize);
 window.addEventListener("click", handleStartClick);
 window.addEventListener("keydown", handleKeyDown);
 
-// Appeler resizeGame() une fois au début pour configurer les dimensions initiales
+//Call resizeGame() once at the beginning to configure the initial dimensions
 resizeGame();
 
 

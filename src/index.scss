@@ -16,7 +16,7 @@
   #slider {
     position: absolute;
     width: 100%;
-    height: 510px;
+    height: 400px;
     overflow: hidden;
     @include xs {
       height: 350px;
@@ -126,9 +126,7 @@ main {
   cursor: pointer;
 }
 
-.nos_jeux {
-  margin-top: 5%;
-}
+
 
 .jeu {
   display: flex;
