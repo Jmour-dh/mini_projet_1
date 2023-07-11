@@ -1,12 +1,13 @@
 :root {
---primary:#2ecc71;
---secondary:#27ae60;
---grey:#808e9b;
---dark-grey:#324355;
---accent: #2c3e50;
---divider: #ecf0f1;
---text: #333;
---font-family:'Montserrat', sans-serif;
---box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+  --primary: #2ecc71;
+  --secondary: #27ae60;
+  --grey: #808e9b;
+  --dark-grey: #324355;
+  --accent: #2c3e50;
+  --divider: #ecf0f1;
+  --text: #333;
+  --error: #e74c3c;
+  --font-family: "Montserrat", sans-serif;
+  --box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
 }
